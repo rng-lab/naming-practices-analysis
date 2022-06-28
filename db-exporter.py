@@ -15,16 +15,57 @@ def camelSplit(identifier):
 database = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="remozer5538437",
-    database="ProjetoArtigoNew_C++"
+    password="123456789",
+    database="NAMING_CATEGORIES"
 )
 
 mycursor = database.cursor()
 
-mycursor.execute("SELECT projeto FROM Identificador")
-projetos = mycursor.fetchall()
-
-projetos = [ 'tensorflow.xml', 'opencv.xml', 'mediapipe.xml', 'blackhole.xml', 'libtorrent.xml', 'madness.xml', 'Catch2.xml',  'yocto-gl.xml', 'veles.xml', 'godot.xml', 'openssl.xml',  'Acid.xml', 'googletest.xml',  'Chaste.xml', 'rhino.xml', 'finalcut.xml', 'DeepSpeech.xml', 'sentencepiece.xml', 'caffe.xml', 'vexcl.xml', 'lammps.xml', 'grpc.xml', 'seams-core.xml', 'mongo-cxx-driver.xml',  'kudu.xml', 'leveldb.xml',  'cpp-rotor.xml',  'Maximilian.xml', 'tiny-dnn.xml', 'vcflib.xml', 'gameplay.xml', 'gromacs.xml', 'asio.xml', 'Simd.xml', 'mysql-server.xml', 'Crow.xml', 'nanodbc.xml', 'yarp.xml', 'CLI11.xml']
+#mycursor.execute("SELECT projeto FROM Identificador")
+#projetos = mycursor.fetchall()
+#projetos = [ 'tensorflow.xml', 'opencv.xml', 'mediapipe.xml', 'blackhole.xml', 'libtorrent.xml', 'madness.xml', 'Catch2.xml',  'yocto-gl.xml', 'veles.xml', 'godot.xml', 'openssl.xml',  'Acid.xml', 'googletest.xml',  'Chaste.xml', 'rhino.xml', 'finalcut.xml', 'DeepSpeech.xml', 'sentencepiece.xml', 'caffe.xml', 'vexcl.xml', 'lammps.xml', 'grpc.xml', 'seams-core.xml', 'mongo-cxx-driver.xml',  'kudu.xml', 'leveldb.xml',  'cpp-rotor.xml',  'Maximilian.xml', 'tiny-dnn.xml', 'vcflib.xml', 'gameplay.xml', 'gromacs.xml', 'asio.xml', 'Simd.xml', 'mysql-server.xml', 'Crow.xml', 'nanodbc.xml', 'yarp.xml', 'CLI11.xml']
+projetos = [
+    'asio.xml',
+    'assimp.xml',
+    'bitcoin.xml',
+    'BlueMatter.xml',
+    'calligra.xml',
+    'Chaste.xml',
+    'citra.xml',
+    'ClickHouse.xml',
+    'core.xml',
+    'FreeCAD.xml',
+    'GacUI.xml',
+    'gecko-dev.xml',
+    'godot.xml',
+    'gromacs.xml',
+    'grpc.xml',
+    'kdenlive.xml',
+    'kdevelop.xml',
+    'krita.xml',
+    'lammps.xml',
+    'mediapipe.xml',
+    'mlir.xml',
+    'mongo.xml',
+    'mysql-server.xml',
+    'obs-studio.xml',
+    'opencv.xml',
+    'openoffice.xml',
+    'percona-server.xml',
+    'proxysql.xml',
+    'pytorch.xml',
+    'qtbase.xml',
+    'rocksdb.xml',
+    'server.xml',
+    'tensorflow.xml',
+    'terminal.xml',
+    'VTK.xml',
+    'winget-cli.xml',
+    'xbmc.xml',
+    'yarp.xml',
+    'yuzu.xml',
+    'ZeroTierOne.xml'
+]
 # print(projetos)
 
 inicio = time.time()
